@@ -12,14 +12,19 @@
 if (window.applicationCache.status=='0'){window.location.replace("cache.html");}
 </script>
 <h1 id="msgs">PS4 9.00 FW Host v3.0 by GamerHack</h1>
-<hr>
 <br>
-<div id="main-section">
-<h1 style="font-size:18px;color:yellow;">Main Payloads</h1>
+<div style="position: relative">
+     <p style="position: fixed; bottom: 0; width:100%; text-align: center">
 <button class="btn" onclick=load_goldhen212()> GoldHEN v2.1.2 </button>
-<button class="btn" onclick=load_binloader()> Bin Loader </button>
+<button class="btn" onclick=load_webrte()> WebRTE </button>
+<a href="http://scnrls.dyndns.pro/SGK/trainer/index.html"><button class="btn btn-web"> PS4 Trainer Web </button></a>
 <br>
-<h1 style="font-size:18px;text-align:center;">Payloads</h1>
+<button class="btn btn-web" onclick=load_mods() style="margin-left: 69px"> Payloads </button>
+<button class="btn btn-toolbox" onclick=load_toolbox()> Orbis-Toolbox </button>
+<button class="btn" onclick=load_fanthreshold()> Fan Threshold </button><select id="tempC"></select>°C
+</div>
+<div id="mods-section">
+<h1 style="font-size:18px;color:yellow;">Online Payloads</h1>
 <button class="btn" onclick=load_Gdumper()> Game-Dumper </button>
 <button class="btn" onclick=load_Udumper()> Update-Dumper </button>
 <button class="btn" onclick=load_SGUdumper()> SGU-Dumper </button>
@@ -28,7 +33,6 @@ if (window.applicationCache.status=='0'){window.location.replace("cache.html");}
 <button class="btn" onclick=load_todex()> ToDex </button>
 <a href="webactivator.html"><button class="btn"> Web-Activator </button></a>
 <button class="btn" onclick=load_ftp()> FTP </button>
-<button class="btn" onclick=load_app2usb()> App2USB </button>
 <button class="btn" onclick=load_dbackup()> DB Backup </button>
 <button class="btn" onclick=load_dbrestore()> DB Restore </button>
 <br>
@@ -43,43 +47,10 @@ if (window.applicationCache.status=='0'){window.location.replace("cache.html");}
 <button class="btn" onclick=load_exitidu()> Exit IDU </button>
 <button class="btn" onclick=load_rifRen()> RIF Renamer </button>
 <button class="btn" onclick=load_permUart()> Permanent UART </button>
-<button class="btn" onclick=load_webrte()> WebRTE </button>
-<a href="http://ps4trainer.com/Trainer/index.html"><button class="btn btn-web"> PS4 Trainer Web </button></a>
-<br>
-<button class="btn" onclick=load_linux1gb()> Linux 1GB </button>
-<button class="btn" onclick=load_linux2gb()> Linux 2GB </button>
-<button class="btn" onclick=load_linux3gb()> Linux 3GB </button>
-<button class="btn" onclick=load_linux4gb()> Linux 4GB </button>
-<button class="btn" onclick=load_linux5gb()> Linux 5GB </button>
-<br>
-<button class="btn btn-web" onclick=load_mods() style="margin-left: 69px"> Games-Mods (Online) </button>
-<button class="btn btn-toolbox" onclick=load_toolbox()> Orbis-Toolbox </button>
-<button class="btn" onclick=load_fanthreshold()> Fan Threshold </button><select id="tempC"></select>°C
-</div>
-<div id="mods-section">
-<h1 style="font-size:18px;color:yellow;">Online Payloads</h1>
-<button class="btn" onclick=load_arabicGuy127()> Arabic Guy v1.27 </button>
-<button class="btn" onclick=load_arabicGuy132()> Arabic Guy v1.32 </button>
-<button class="btn" onclick=load_arabicGuy133()> Arabic Guy v1.33 </button>
-<button class="btn" onclick=load_WildeModz132()> WildeModz-1.32 v1.3 </button>
-<button class="btn" onclick=load_WildeModz133()> WildeModz-1.33 v1.3 </button>
-<button class="btn" onclick=load_WildeModz138()> WildeModz-1.38 v1.6 </button>
-<br>
-<button class="btn" onclick=load_beefQueef133()> Beef Queef Mod v1.33 </button>
-<button class="btn" onclick=load_beefQueef134()> Beef Queef Mod v1.34 </button>
-<button class="btn" onclick=load_beefQueef138()> Beef Queef Mod v1.38d </button>
-<button class="btn" onclick=load_Expulsion()> Expulsion v3.0 </button>
-<br>
-<button class="btn" onclick=load_Oysters100()> Oysters Menu v1.00 </button>
-<button class="btn" onclick=load_Oysters113()> Oysters Menu v1.13 </button>
-<button class="btn" onclick=load_Oysters119()> Oysters Menu v1.19 </button>
-<button class="btn" onclick=load_Oysters124()> Oysters Menu v1.24 </button>
-<button class="btn" onclick=load_Oysters129()> Oysters Menu v1.29 </button>
 <br>
 <button class="btn btn-web" onclick=back() style="margin-bottom: 241px"> Return </button>
 </div>
 <br>
-<h1 style="margin-top: 19px;color: yellow;">Special Thanks to:<a href="https://twitter.com/sleirsgoevy" style="color:#f31414; margin-left: 15px;">@sleirsgoevy</a><a style="color:white; margin-left: 15px;">ChendoChap</a><a href="https://twitter.com/SpecterDev" style="color:#f31414; margin-left: 15px;">@SpecterDev</a><a style="color:white; margin-left: 15px;">SiSTR0</a><a href="https://twitter.com/Znullptr" style="color:#f31414; margin-left: 15px;">@Znullptr</a><a style="color:white; margin-left: 15px;">And Many More Developers ...</a></h1>
 <script>
 for(var i=40; i<=75; i=i+5){
     var select = document.getElementById("tempC");
